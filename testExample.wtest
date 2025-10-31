@@ -1,9 +1,10 @@
-import example.pepita
+import example.*
 
 describe "group of tests for pepita" {
 
   test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+    const nave1 = new NaveBaliza(velocidad = 10, direccionRespectoAlSol = 5, color= "rojo", combustible = 100)
+    assert.equals("rojo", nave1.color())
   }
 
 }
